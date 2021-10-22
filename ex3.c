@@ -4,7 +4,7 @@
 #include <assert.h>
 #include <time.h>
 #include "pixel.h"
-#define GET_PIXEL(a, i ,j)  (*(*(a + i) + j))#define GET_PIXEL(a, i ,j)  (*(*(a + i) + j))
+#define GET_PIXEL(a, i ,j)  (*(*(a + i) + j))
 
 
 /*
@@ -60,9 +60,9 @@ void colorToGray(Picture *pic){
 		
 		for(int i = 0; i < pic->height; i++){
 			for(int j = 0; j < pic->width; j++){
-				GET_PIXEL(pic,i, j).R*=0.3;
-				GET_PIXEL(pic,i, j).B*=0.59;
-				GET_PIXEL(pic,i, j).G*=0.11;
+				GET_PIXEL(pic->pix_array,i, j).R*=0.3;
+				GET_PIXEL(pic->pix_array,i, j).B*=0.59;
+				GET_PIXEL(pic->pix_array,i, j).G*=0.11;
 			}
 		}
 		printPicture(pic);
