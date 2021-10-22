@@ -1,0 +1,13 @@
+Ex. 6:
+
+
+-->Pentru variabila a observam ca este initializata cu o valoare random la inceput, iar dupa ce
+trecem de linia la care este initializat, i se atribuie valoarea din cod;
+-->Acelasi lucru se intampla si pentru celelalte variabile;
+-->Observam ca zonele de memorie ale variabilelor a si b sunt la 4 octeti una de cealalta, ceea
+ce are sens pt. ca atat int cat si unsigned int ocupa cate 4 octeti;
+-->Observam de asemenea ca valorile din vectorul v care au fost alocate in ex6.c sunt destul de 
+amuzante si radem putin;
+-->Se parcurge mai departe vectorul v cu ajutorul pointerului int_ptr, si tot cu ajutorul 
+comenzii x observam ca ++int_ptr creste adresa pointerului cu 4 unitati, deoarece vectorul v este
+int care, din nou, ocupa cate 4 octeti in memorie.
