@@ -1,0 +1,12 @@
+Ex. 5:
+
+-->Dupa ce am dat build si run, am deschis executabilul cu gdb, am pus un break point
+la inceputul functiei main si am inceput procesul de debugging;
+-->Am folosit comanda n pentru a parcurge liniile din main, am ajung la scanf, am dat
+input de la tastatura si am mers mai departe;
+-->S-a ajuns la iterarea for-ului care a avut doar 2 pasi(am dat n=2) ceea ce s-a
+intamplat fara probleme;
+-->Am ajuns la linia 28 de unde nu am putut merge mai departe din cauza segmentation
+fault-ului, asa ca incercam sa inspectam memoria de la v[423433];
+-->Primim un mesaj care ne anunta ca incercam sa accesam o zona de memorie restrictionata,
+motiv pentru care primim segmentation fault la rularea programului.
