@@ -2,10 +2,10 @@
 #include <string.h>
 #include <stdlib.h>
 
-char* delete_first(char *s, char *pattern);
 
-char* delete_first(char *s, char *pattern){
-	int i, j, l, k, ok = 0; 
+char* delete_first(char *s, char *pattern)
+{
+	int i, j, l, k, ok; 
 	char a[100];
 	strcpy(a, s);
 	char b[100];
@@ -13,21 +13,24 @@ char* delete_first(char *s, char *pattern){
 	strcpy(b, pattern);
 	l = strlen(a);
 	k = strlen(b);
-	for(i = 0; i < l; i++) {
+	for(i = 0; i < l; i++) 
+	{
 		ok = 1;
-		for(j = 0; j < k; j++) {
-			if(a[i + j] != b[j]) {
+		for(j = 0; j < k; j++) 
+		{
+			if(a[i + j] != b[j]) 
+			{
 				ok = 0;
 				break;
 			}
-			if(ok == 1){
-				for(j = i; j <= l - k; j++) {
-					a[j] = a[j + k];
-					
-				}
-				break;
-				
-			}
+		}
+		if(ok == 1)
+		{
+			for(j = i; j <= l - k; j++) 
+				a[j] = a[j + k];
+			
+			break;
+		
 		}
 	}
 	
