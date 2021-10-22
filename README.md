@@ -1,4 +1,4 @@
 # lab2-IOCLA
 lab 2 la iocla frate
-test \n
+test 
 vere ce se petrece
